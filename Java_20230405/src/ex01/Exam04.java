@@ -26,12 +26,12 @@ public class Exam04 {
 	       System.out.print(second%60+"sec");
 	       
 	       //분
-	       int minute = second/60;
+	       int minute = second/60;  //66
 	       
-	       System.out.print(minute%60+"min");
+	       System.out.print(minute%60+"min"); //66 % 60 =>6
 	       
 	       //시
-	       int hour = minute/60;
+	       int hour = minute/60;  // 66/60 => 1
 	       System.out.print(hour+"hour");
 		
 	       System.out.println();
