@@ -6,13 +6,13 @@ public class OperatorEx2 {
 		int i=5, j=0;
 		
 		j = i++;
-		System.out.println(i + ", " + j);  // 5, 10
+		System.out.println(i + ", " + j);  // 6, 5
 		 
 		i=5;
 		j=0;
 		j = ++i;
-		System.out.println(i + ", " + j);
-		
+		System.out.println(i + ", " + j);  //6, 6
+ 		
 	}
 
 }
