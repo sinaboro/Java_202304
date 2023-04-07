@@ -14,11 +14,11 @@ public class Exam09 {
 		System.out.println("실기점수 입력>");
 		int 실기점수 = sc.nextInt();
 		
-		if(면접점수 >= 70 && 실기점수 >= 70) {
+		if(면접점수 >= 70 && 실기점수 >= 70) 
 			System.out.println("합격");
-		}else { 
+		else  
 			System.out.println("불합격");
-		}
+		
 		
 		System.out.println("프로그램 종료");
 
