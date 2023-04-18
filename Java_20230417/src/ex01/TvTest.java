@@ -12,15 +12,16 @@ class Tv {
 	void channelUp() { channel++; }
 	void channelDown() { channel--; }
 	
+	public Tv() {   //디폴트 생성자
+	}
 }
 
 public class TvTest {
 
 	public static void main(String[] args) {
 		
-		int num = 10;
-		int kor = 90;
 		Tv tv  = new Tv();
+		
 		tv.color = "검정";
 		tv.channelUp();
 		tv.channelUp();

@@ -28,6 +28,8 @@ public class Exam01 {
 		Member m = new Member();
 		
 		System.out.println(m.func(10, 2));
+		
+		Member k = new Member();
 	}
 
 	
