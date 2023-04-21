@@ -2,7 +2,7 @@ package ex02;
 
 class Buyer{
 	int money = 1000;
-	Product[] cart = new Product[3];
+	Product[] cart = new Product[3]; //i=0,1,2 =>
 	int i = 0;
 	
 	//1. 가진돈과 물건의 가격을 비교해서 가진 돈이 적으면 메소드 종료
@@ -18,8 +18,16 @@ class Buyer{
 		add(p);  //구입한 물건은 Tv, Audio,Computer, Computer
 		
 	}
-	
+	//공간부족하면 기존 크기*2확장해라..
 	void add(Product p) {
+		
+		if(i>=cart.length) {
+			Product[] tmp = new Product[cart.length*2];
+			System.arraycopy(cart, 0, tmp, 0, cart.length);
+//			for(int j=0; j<cart.length; j++)
+//				tmp[j] =cart[j];
+			cart = tmp;
+		}
 		cart[i] = p;
 		i++;
 	}
@@ -63,7 +71,11 @@ public class Exam01 {
 		Buyer b = new Buyer();
 		b.buy(new Tv());
 		b.buy(new Computer());
+		b.buy(new Tv());
 		b.buy(new Audio());
+		b.buy(new Computer());
+		b.buy(new Computer());
+		b.buy(new Computer());
 		
 		b.summary();
 		
